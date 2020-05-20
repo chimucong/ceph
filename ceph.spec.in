@@ -1188,6 +1188,9 @@ ${CMAKE} .. \
     -DWITH_MANPAGE=ON \
     -DWITH_PYTHON3=%{python3_version} \
     -DWITH_MGR_DASHBOARD_FRONTEND=OFF \
+%if 0%{with seastar}
+    -DWITH_SEASTAR=ON \
+%endif
 %if 0%{without ceph_test_package}
     -DWITH_TESTS=OFF \
 %endif
