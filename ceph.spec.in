@@ -1177,6 +1177,7 @@ CMAKE=cmake3
 CMAKE=cmake
 %endif
 ${CMAKE} .. \
+    -DWITH_SEASTAR=ON \
     -DCMAKE_INSTALL_PREFIX=%{_prefix} \
     -DCMAKE_INSTALL_LIBDIR=%{_libdir} \
     -DCMAKE_INSTALL_LIBEXECDIR=%{_libexecdir} \
