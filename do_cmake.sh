@@ -11,7 +11,7 @@ if [ -e $BUILD_DIR ]; then
     exit 1
 fi
 
-ARGS+=" -DWITH_SEASTAR=ON -DCMAKE_BUILD_TYPE=RelWithDebInfo"
+ARGS+=" -DWITH_SEASTAR=ON -DCMAKE_BUILD_TYPE=RelWithDebInfo -DWITH_LTTNG=OFF"
 
 PYBUILD="2"
 if [ -r /etc/os-release ]; then
